@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #121212;
+  width:100%;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1rem;
+  overflow-x: hidden;
+}
+
+#logo{
+    margin-top: 2rem;
+    width:10rem;
+}
+.mainmenu{
+    color: #e4e2df;
+    margin-left: 2rem;
+    width:20%;
+}
+/* mainmenu contents */
+.mainmenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: .3s;
+    width:14rem;
+  }
+  
+  .label:hover,
+  .label:focus-within,
+  .label:active {
+   background-color: #767676;
+ 
+  }
+  
+  .radio-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .radio-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: linear-gradient(to right bottom, hsl(98, 95%, 47%), hsl(65, 92%, 50%));
+    position: relative;
+  }
+  
+  .radio-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(100, 12%, 95%);
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  
+  .radio-input:checked+.radio-design::before {
+    transform: scale(0);
+  }
+  
+  .label-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+  }
+  
+  .radio-input:checked~.label-text {
+    color:#D1FF4C
+  }
+  .bottonmm{
+    color: #e4e2df;
+  }
+  /* menumenustops */
+  /* heosection */
+  .containerwhole{
+    display: flex;
+    width:100%;
+  }
+  .herosection{
+    border-radius: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    height:95vh;
+    width:76%;
+    background-color: #424242;
+    color:#e4e2df;
+}
+.hscontents{
+    margin: 1.5rem 3rem;
+}
+
+.herotop{
+ width:100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.grid-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr; 
+  grid-template-rows: 1fr 1fr; 
+  grid-gap: 3rem; 
+  height: 70vh;
+}
+
+.grid-item{
+  border-radius: 1.6rem;
+  background-color: #121212;
+}
+ /* debitcard starts */
+.debcard{
+  background-image: url(./img/bgg.jpg);
+  width:23rem;
+  height: 14rem;
+  margin-left: 3rem;
+  border-radius: 2rem;
+}
+.debcardtop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#yourcard{
+  color:#D1FF4C;
+  padding: .7rem;
+}
+#plat{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: .1rem; 
+
+}
+.acctno{
+  
+  
+  height: 2rem;
+}
+.debbtm{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.debbtm{
+  padding:0rem  1rem;;
+}
+.debadd{
+  
+  margin-top: 1rem;
+  background-color: #424242;
+  width:10rem;
+  height: 11rem;
+  margin-right: 3rem;
+  border-radius: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.debitcard{
+  display: flex;
+ justify-content: space-between;
+
+}
+
+.adddebdet{
+ 
+  margin-top: .6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: .1rem; 
+  font-size: .6rem;
+}
+.pluss{
+  width: 3rem;
+  cursor: pointer; 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.pluss:hover {
+  transform: rotate(180deg);
+  
+}
+  
+  /* debitcard ends */
+  /* totalbalance starts */
+  .balance{
+   display: flex;
+   margin-left: 3rem;
+  
+  }
+  .balance img{
+    margin-top: 1rem;
+    width: 4rem;
+    margin-bottom: -1rem;
+  }
+
+  #ctb{
+    font-weight: 3rem;
+    font-size: 4rem;
+    width: 3rem;
+    height:4rem;
+  }
+  
+ .balance-container{
+  width:23rem;
+  height:7rem;
+  background-color: #767676;
+  border-radius: .8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 1rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ } 
+  
+ .bcc{
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+ } 
+  
+  .gb{
+    border-radius: .7rem;
+    width: 6.4rem;
+    height: 5rem;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  /* total balance stops */
+  /* recent transaction starts*/
+
+  .rt{
+    color: #e4e2df;
+  }
+  /* recent transaction stops */
+  
+  /* ethereum  wallet*/
+  .card {
+    width: 195px;
+    height: 300px;
+    background: #313131;
+    border-radius: 20px;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .img {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+  }
+  
+  .textBox > .text {
+    font-weight: bold;
+  }
+  
+  .textBox > .head {
+    font-size: 20px;
+  }
+  
+  .textBox > .price {
+    font-size: 17px;
+  }
+  
+  .textBox > span {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  
+  .card:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .card:hover > .img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+  
+ 
+
+
+  .ethh{
+    display: flex;
+   align-items: center;
+   
+  }
+  .eth{
+    margin:0rem 4rem;
+    width:12rem;
+  }
+  
+   /*ethereum wallet stops  */
+  
+  /* common things */
+  .inactive{
+    display: none;
+    
+  }
+  
+/* common things ends */
+/* popup logout */
+.logout{
+  border-radius: 2rem;
+  margin-right: 1rem;
+  margin-top: 4rem;
+  height:80vh;
+  width:450%;
+  background-color:#1e1e1e;
+  color:#e4e2df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoutt{
+  background-color: #363636;
+  width: 45%;
+  height: 40vh ;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+}
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #1e1e1e;
+  cursor: pointer;
+  color: greenyellow;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+}
+
+button:hover {
+  animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.7, 1.3);
+  }
+
+  25% {
+    transform: scale(1.3, 0.7);
+  }
+
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+
+  75% {
+    transform: scale(1.3, 0.7);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* logout stops */
+
+/* popup of deposit */
+.depositt{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inactive{
+  display: none;
+}
+
+.active{
+  display: block;
+  color: #D1FF4C;
+}
+.bank img{
+  height: 3rem;
+}
+.depo{
+  width:40%;
+  height:40vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.depo h4{
+  font-size: 2rem;
+  color: white;
+}
+.style {
+  transition: box-shadow .3s; 
+  width: 100%;
+  padding: .7rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #cdf45a;
+}
+.style:hover{
+  background-color: #D1FF4C;
+  box-shadow: 0 0 11px #D1FF4C;
+}
+#dForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+    
+  font-size: 1rem;
+  transition: box-shadow .3s;
+  padding: .8rem 4rem;
+  background-color: #040d10;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D1FF4C;
+  box-shadow: 0 0 11px #D1FF4C;
+  color: #000000;
+}
+.words{
+  width:50%;
+  margin: 0rem 20rem;
+  transition: .9s;
+  border-radius: .5rem;
+  padding: 5.5rem;
+  text-align: center;
+  border: 1px solid #D1FF4C;
+  box-shadow: 0 0 17px #9bb747;
+  color: white;
+}
+
+#depositpopup{
+  width:100%;
+  height:60vh;
+}
+
+.form1 {
+  background-color: #333;
+  margin-top: 3rem;
+  height: 10rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 label{
+  margin-top: 1rem;
+  color: white;
+}
+#mpin1{
+  background-color: #cdf45a;
+  border-style: solid;
+  border-radius: .5rem;
+  height: 2rem;
+  width:14rem;
+}
+.homeButtonofdeposit{
+  text-decoration: none;
+ margin-top: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* deposit popup ends */
+
+/* withdraw popup starts */
+.withdraww{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inactive{
+  display: none;
+}
+
+.active{
+  display: block;
+  color: #D1FF4C;
+}
+.bank img{
+  height: 3rem;
+}
+.with{
+  width:40%;
+  height:40vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.with h4{
+  font-size: 2rem;
+  color: white;
+}
+.style {
+  transition: box-shadow .3s; 
+  width: 100%;
+  padding: .7rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #cdf45a;
+}
+.style:hover{
+  background-color: #D1FF4C;
+  box-shadow: 0 0 11px #D1FF4C;
+}
+#wForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+    
+  font-size: 1rem;
+  transition: box-shadow .3s;
+  padding: .8rem 4rem;
+  background-color: #040d10;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D1FF4C;
+  box-shadow: 0 0 11px #D1FF4C;
+  color: #000000;
+}
+.wordss{
+  width:50%;
+  margin: 0rem 20rem;
+  transition: .9s;
+  border-radius: .5rem;
+  padding: 5.5rem;
+  text-align: center;
+  border: 1px solid #D1FF4C;
+  box-shadow: 0 0 17px #9bb747;
+  color: white;
+}
+
+#withdrawpopup{
+  width:100%;
+  height:60vh;
+}
+
+.form2 {
+  background-color: #333;
+  margin-top: 3rem;
+  height: 10rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form2 label{
+  margin-top: 1rem;
+  color: white;
+}
+#mpin2{
+  background-color: #cdf45a;
+  border-style: solid;
+  border-radius: .5rem;
+  height: 2rem;
+  width:14rem;
+}
+.homeButtonofwithdraw{
+  text-decoration: none;
+ margin-top: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* popup of withdraw stops */

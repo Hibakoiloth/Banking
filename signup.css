@@ -1,0 +1,137 @@
+body{
+    background-color: #000000;
+  
+}
+.form{
+    font-size: 1.2rem;
+}
+.bank img{
+    height: 3rem;
+}
+.create p{
+    color: #D1FF4C;
+    font-size: 1.5rem;
+}
+.si{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+#signupp a{
+    color: #D1FF4C;
+    font-size: 1.2rem;
+}
+#signupp a:hover {
+ text-shadow: 0 0 11px #D1FF4C;  
+}
+
+#signupp {
+    background-color: #333;
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    width:40%;
+    height:60vh;
+}
+
+.style {
+    transition: box-shadow .3s; 
+    width: 80%;
+    padding: .4rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #cdf45a;
+}
+.style:hover{
+    background-color: #D1FF4C;
+    box-shadow: 0 0 11px #D1FF4C;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-size: 1rem;
+    transition: box-shadow .3s;
+    padding: .8rem 3rem;
+    background-color: #040d10;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D1FF4C;
+    box-shadow: 0 0 11px #D1FF4C;
+    color: #000000;
+}
+.backtolanding{
+    display: flex;
+    justify-content: end;
+    
+}
+.backtolanding img{
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  
+}
+.backtolanding img:hover{
+    box-shadow: 0 0 11px #D1FF4C;
+}
+.inactive{
+    display: none;
+}
+.active{
+    display: block;
+}
+.mpincreate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mpincenter{
+    padding: 2rem;
+    margin: 2rem;
+}
+.form1{
+    width:40rem;
+    height: 30rem;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#mpin1 {
+    max-width:13rem;
+    height: 3rem;
+    width: 17rem;
+    border-radius: .9rem;
+    border-style: solid;
+}
+#mpin2{
+    max-width:13rem;
+    height: 3rem;
+    width: 17rem;
+    border-radius: .9rem;
+    border-style: solid;
+}
+.mpinspace{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#mpinsubmit{
+    margin-bottom: 4rem;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="final.css">
+    <title>HOME</title>
+</head>
+<body>
+    <div class="containerwhole">
+    <div class="mainmenu">
+      <div class="mainmenutop">
+        <img src="./img/Logo.svg" alt="" id="logo"><br>
+        <p>Main Menu</p>
+        <!-- mainmenu contents -->
+        <div class="radio-input-wrapper">
+            <label class="label" id="mmdashboard">
+              <input value="value-1" name="value-radio" id="value-1" class="radio-input" type="radio">
+              <div class="radio-design"></div>
+              <div class="label-text" >Dashboard</div>
+            </label>
+            <label class="label">
+              <input value="value-3" name="value-radio" id="value-3" class="radio-input" type="radio">
+              <div class="radio-design"></div>
+              <div class="label-text">Transaction</div>
+            </label><br><br>
+            <p>Others</p>
+            <label class="label">
+              <input value="value-2" name="value-radio" id="value-2" class="radio-input" type="radio">
+              <div class="radio-design"></div>
+              <div class="label-text">suggestion</div>
+            </label>
+            <label class="label">
+              <input value="value-4" name="value-radio" id="value-4" class="radio-input" type="radio">
+              <div class="radio-design"></div>
+              <div class="label-text">settings</div>
+            </label>
+            <label class="label" id="mmlogout">
+              <input value="value-4" name="value-radio" id="value-4" class="radio-input" type="radio">
+              <div class="radio-design"></div>
+              <div class="label-text" >Log Out</div>
+            </label>
+          </div>
+        </div>
+        <div class="mainmenubottom">
+          <div class="bottonmm">
+            <p style="font-size: 1.4rem;"><span style="color: #D1FF4C; ">YourBank</span>.2024</p>
+            <p style="font-size: 1rem; margin-top: -.5rem;">Your Online Banking partner</p>
+          </div>
+        </div>
+      </div>
+   <!-- mainmenu stop -->
+   <!-- herosection dashboard -->
+   <!-- pop up of log out -->
+   <div class="popuplogout inactive">
+    <div class="logout ">
+      <div class="logoutt">
+        <p style="font-weight: 5rem;">DO YOU WANT TO <span style="color: #D1FF4C; ">LOG OUT</span> ?</p>
+        <button id="logouttolanding">LOG OUT</button>
+      </div>
+    </div>
+   </div>
+
+  <!-- popup of logout stops -->
+   <div class="herosection ">
+    <div class="hscontents">
+    <div class="herotop">
+        <div class="hleft">
+            <h3>Welcome to <span style="color: #D1FF4C;">YourBank</span></h3>
+            <div id="hi"></div>
+        </div>
+        <div class="hright">
+            <i class="fa-regular fa-user fa-2xl" style="color: #e4e2df ;" ></i></i>
+        </div>
+    </div>
+    <div class="grid-container">
+      <!-- debitcard starts -->
+        <div class="grid-item ">
+          <P style="margin-left: 1.5rem;">Debit Card Account</P>
+          <div class="debitcard">
+            <div class="debcard">
+              <div class="debcardtop">
+                <p id="yourcard">YourCarD</p>
+                <p id="plat">PLATINUM DEBIT</p>
+              </div>
+              <div class="gold"><img src="./img/chip-debit-svgrepo-com.svg" alt="" style=" width: 3rem;">
+              <img src="./img/wifi-logo-svgrepo-com (1).svg" alt="" style="width: 2.6rem; color: #e4e2df;"></div>
+                <div class="acctno" id="acctno" style="margin-top: 1rem; margin-bottom: -.7rem; "></div>
+                <div class="debbtm">
+                  <div class="valid"><p>Valid Thru</p></div>
+                  <div class="visa" style=>VISA</div>
+                </div>
+            </div>
+            <div class="debadd">
+             <div class="pluss"><img src="./img/pluss.svg" alt="" ></div>
+             <div class="adddebdet">ADD <span style="color: #D1FF4C;">DEBIT CARD </span>DETAILS</div>
+          </div>
+         </div>
+         </div>
+         <!-- debit card stops -->
+         <!-- total balance starts -->
+        <div class="grid-item ">
+          <p style="margin-left: 9rem;">Your Total Balance</p>
+          <div class="balance">
+            <img src="./img/rupee-sign-svgrepo-com.svg" alt="" >
+            <div id="ctb"></div>
+          </div>
+          <div class="bcc">
+            <div class="balance-container">
+              <div class="send gb"><i class="fa-regular fa-paper-plane fa-xl" style="color: #aecd52;"></i>
+              <P style=" font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              letter-spacing: .1rem; 
+              font-size: .8rem; margin-top: 1rem;">SEND</P>
+            </div>
+              <div class="deposit gb"><i class="fa-solid fa-landmark fa-xl" style="color: #aecd52;"> </i>
+                <P style=" font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                letter-spacing: .1rem; 
+                font-size: .8rem; margin-top: 1rem;">DEPOSIT</P>
+              </div>
+              <div class="withdraw gb"><i class="fa-solid fa-money-check-dollar fa-xl" style="color: #aecd52;">
+                </i><P style=" font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                letter-spacing: .1rem; 
+                font-size: .8rem; margin-top: 1rem;">WITHDRAW</P></div>
+          </div>
+        </div>
+          
+        </div>
+        <!-- total balance stops -->
+        <!-- recent transactions -->
+        <div class="grid-item rt"> 
+          <p style="margin-left: 2rem;">Recent Transaction</p>
+        </div>
+        <!-- ethereum wallet -->
+        
+       <div class="grid-item ">
+        <div class="ethh">
+          <div class="eth"> MY ETHEREUM WALLET
+          </div >
+        <div class="card">
+          <svg class="img" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"  style="width: 3rem; height: 4rem; " version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 784.37 1277.39" xmlns:xlink="http://www.w3.org/1999/xlink">
+         <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <g id="_1421394342400">
+           <g>
+            <polygon fill="#343434" fill-rule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54"></polygon>
+            <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,0 -0,650.54 392.07,882.29 392.07,472.33"></polygon>
+            <polygon fill="#3C3C3B" fill-rule="nonzero" points="392.07,956.52 387.24,962.41 387.24,1263.28 392.07,1277.38 784.37,724.89"></polygon>
+            <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,1277.38 392.07,956.52 -0,724.89"></polygon>
+            <polygon fill="#141414" fill-rule="nonzero" points="392.07,882.29 784.13,650.54 392.07,472.33"></polygon>
+            <polygon fill="#393939" fill-rule="nonzero" points="0,650.54 392.07,882.29 392.07,472.33"></polygon>
+           </g>
+          </g>
+         </g>
+        </svg>
+          <div class="textBox">
+            <p class="text head">Ethereum</p>
+            <span>Cryptocurrency</span>
+            <p class="text price">1.654,34€</p>
+          </div>
+        </div>
+      
+       
+      </div>
+   </div>
+</div>
+</div>
+   </div>
+    </div>
+<!-- deposit money -->
+    <!-- popup of deposit -->
+    <div class="depositt inactive">
+      <div class="bank">
+        <img src="./img/Logo.svg" alt="" />
+      </div>
+      <br /><br />
+      <div class="depo">
+        <h4>Enter the amount you want to deposit</h4>
+        <form id="dForm">
+          <input type="number" class="style" id="dAmount" /><br />
+          <button type="submit" class="button" id="depositmoney">
+            Deposit Money
+          </button>
+        </form>
+      </div>
+      <div class="mpincenter inactive">
+        <form class="form1">
+            <label for="mpin1">ENTER YOUR MPIN</label><br>
+            <input
+              type="number"
+              id="mpin1"
+              placeholder="enter four digit mpin"
+              maxlength="4"
+              required
+            /><br />
+          <button type="submit" id="mpinsubmit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="depositpopup" class="inactive">
+      
+      <br /><br />
+      <div class="words"></div>
+      <div class="buttons">
+        <a href="final.html" class="homeButtonofdeposit"><button id="homeButton">GO BACK TO HOME</button></a> 
+      </div>
+    </div>
+    <!-- popup of deposit stops here -->
+
+
+    
+    <!-- popup of withdraw -->
+    <div class="withdraww inactive">
+      <div class="bank">
+        <img src="./img/Logo.svg" alt="" />
+      </div>
+      <br /><br />
+      <div class="with">
+        <h4>Enter the amount you want to withdraw</h4>
+        <form id="wForm">
+          <input type="number" class="style" id="wAmount" /><br />
+          <button type="submit" class="button" id="withdrawmoney">
+            Withdraw Money
+          </button>
+        </form>
+      </div>
+      <div class="mpincenterr inactive">
+        <form class="form2">
+            <label for="mpin2">ENTER YOUR MPIN</label><br>
+            <input
+              type="number"
+              id="mpin2"
+              placeholder="enter four digit mpin"
+              maxlength="4"
+              required
+            /><br />
+          <button type="submit" id="mpinsubmitt">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="withdrawpopup" class="inactive">
+      
+      <br /><br />
+      <div class="wordss"></div>
+      <div class="buttons">
+        <a href="final.html" class="homeButtonofwithdraw"><button id="homeButton">GO BACK TO HOME</button></a> 
+      </div>
+    </div>
+<!-- popup of withdraw stops -->
+
+</body>
+<script src="final.js"></script>
+<!-- <script src="signup.js"></script>
+<script src="login.js"></script> -->
+</html>

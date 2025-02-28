@@ -1,0 +1,94 @@
+
+.loginn{
+   background-color: black;
+    color:#eaeedd; 
+    height: 100vh;
+  
+}
+.backtolanding{
+    display: flex;
+    justify-content: end;
+    height: 10rem;
+}
+.backtolanding img{
+    height: 2.5rem;
+    margin: 4rem;
+  
+}
+
+
+.backtolanding img:hover{
+    box-shadow: 0 0 11px #D1FF4C;
+}
+
+.contentcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginn a{
+    color: #D1FF4C;
+    font-size: 1.4rem;
+} 
+
+.loginn a:hover {
+    text-shadow: 0 0 11px #D1FF4C;  
+   }
+
+#loginForm{
+    background-color: #333;
+    margin-top: 2rem;
+    color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width:20%;
+    height:40vh;   
+}
+.bank img{
+    height: 3rem;
+}
+.style {
+    transition: box-shadow .3s; 
+    width: 80%;
+    padding: .4rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #cdf45a;
+}
+.style:hover{
+    background-color: #D1FF4C;
+    box-shadow: 0 0 11px #D1FF4C;
+}
+.loginn a{
+    color: white;
+    font-size: 1.5rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-size: 1rem;
+    transition: box-shadow .3s;
+    padding: .8rem 3rem;
+    background-color: #040d10;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D1FF4C;
+    box-shadow: 0 0 11px #D1FF4C;
+    color: #000000;
+}
+
+
+
+
+
+

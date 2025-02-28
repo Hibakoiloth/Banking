@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a Bank webpage." />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Bank</title>
+  </head>
+  <body>
+    <!-- home page -->
+    <!-- navbar starts -->
+    <div id="content ">
+      <div class="navbar">
+        <div class="navright">
+          <img src="./img/Logo.svg" alt="" />
+        </div>
+        <div class="navcenter">
+          <a href="" id="homelogo">Home</a>
+          <a href="">Careers</a>
+          <a href="">About</a>
+          <a href="">Security</a>
+        </div>
+        <div class="navend">
+          <div class="signup">
+            <a href="signup.html">Signup</a>
+          </div>
+          <div id="login">
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <!-- herosection starts -->
+      <div class="herosection">
+        <div class="heroleft">
+          <div class="hi"></div>
+          <img src="./img/Container.svg" alt="" />
+          <h1>
+            Welcome to <span>YourBank</span> Empowering your financial journey
+          </h1>
+          <p>
+            At <span>YourBank</span>, our mission is to provide comprehensive
+            banking solutions that empower individuals and businesses to achieve
+            their financial goals. We are committed to delivering personalized
+            and innovative services that prioritize our customers' needs.
+          </p>
+        </div>
+        <div class="heroright">
+          <img src="./img/Icon Container.svg" alt="" />
+          <div class="trans">
+            <img src="./img/trans.svg" alt="" />
+          </div>
+          <div class="ex">
+            <p>Money exchange</p>
+            <img src="./img/money.svg" alt="" />
+
+            <div class="exchange">
+              <p>exchange</p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- herosecton ends -->
+      <!-- footer starts -->
+      <div class="footer">
+        <div class="services">
+          <h1>Our <span>Services</span></h1>
+          <p>
+            Discover a range of comprehensive and customizable banking products
+            at YourBank, designed to suit your unique financial needs and
+            aspirations
+          </p>
+        </div>
+        <div class="servicecontent">
+          <div class="Account flex box">
+            <img src="./img/Icon Container (1).svg" alt="" />
+            <p>Transaction History</p>
+          </div>
+          <div class="View flex box">
+            <img src="./img/Icon Container (2).svg" alt="" />
+            <p>View Balance</p>
+          </div>
+          <div class="deposit flex box">
+            <img src="./img/withdraw.svg" alt="" />
+            <p>deposit</p>
+          </div>
+          <div class="withdraw flex box">
+            <img src="./img/Icon.svg" alt="" />
+            <p>withdraw</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer ends here -->
+    <!-- home ends -->
+    <!-- popup of deposit -->
+    <div class="depositt inactive">
+      <div class="bank">
+        <img src="./img/Logo.svg" alt="" />
+      </div>
+      <br /><br />
+      <div class="depo">
+        <h4>Enter the amount you want to deposit</h4>
+        <form id="dForm">
+          <input type="number" class="style" id="dAmount" /><br />
+          <button type="submit" class="button" id="depositmoney">
+            Deposit Money
+          </button>
+        </form>
+      </div>
+      <div class="mpincenter inactive">
+        <form class="form1">
+            <label for="">ENTER YOUR MPIN</label><br>
+            <input
+              type="number"
+              id="mpin1"
+              placeholder="enter four digit mpin"
+              maxlength="4"
+              required
+            /><br />
+          <button type="submit" id="mpinsubmit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="depositpopup" class="inactive">
+      <div class="bank">
+        <img src="./img/Logo.svg" alt="" />
+      </div>
+      <br /><br />
+      <div class="words"></div>
+      <div class="buttons">
+        <a href="./homee.html"><button id="homeButton">Home</button></a> 
+      </div>
+
+      <div id="viewbalance" class="vbalance inactive">
+        <div class="bank">
+            <img src="./img/Logo.svg" alt="" />
+        </div>
+        <br /><br />
+        <div class="balances"></div>
+        <div class="buttons">
+            <a href="./homee.html"><button id="homeButton">Home</button></a>
+        </div>
+    </div> 
+    </div>
+    <!-- popup of deposit stops here -->
+    <!-- popup of withdraw starts here -->
+    <div class="withdraww inactive">
+    <div class="bank">
+        <img src="./img/Logo.svg" alt="">
+       </div><br><br>
+    <div class="with">
+    <h4>Enter the amount you want to withdraw</h4>
+    <form action="" class="contentsofform">
+        <input type="number" class="style"><br><br>
+        <button type="submit" class="button" id="withdrawmoney">
+          Withdraw Money
+        </button>
+    </form>
+</div>
+<div class="mpincenterwd inactive">
+  <form class="form1">
+      <label for="">ENTER YOUR MPIN</label><br>
+      <input
+        type="number"
+        id="mpin1"
+        placeholder="enter four digit mpin"
+        maxlength="4"
+        required
+      /><br />
+    <button type="submit" id="mpinsubmit">Submit</button>
+  </form>
+</div>
+
+</div>
+  </body>
+  <script src="homee.js"></script>
+  <script src="signup.js"></script>
+  <script src="login.js"></script>
+  </html>

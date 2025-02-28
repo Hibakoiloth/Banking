@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="backtolanding">
+      <a href="landing.html"><img src="./img/heroicons-solid/home.svg" alt=""></a>
+    </div> 
+    <div class="si">
+      <div class="bank">
+        <img src="./img/Logo.svg" alt="">
+       </div>
+       <div class="create">
+        <p>Create a new bank account</p>
+       </div>
+      <div id="signupp">
+        <form action="" class="form">
+          <h2>Personal information</h2>
+          <label for="">Name</label><br />
+          <input type="text" id="name" name="name" class="style" /><br /><br />
+          <label for="" maxlength="10" pattern="\d{10}">Phone Number</label><br />
+          <input
+            type="number"
+            id="number"
+            name="number"
+            class="style"
+          /><br /><br />
+          <label for="">Date of birth</label><br />
+          <input type="date" id="date" name="date" class="style" /><br /><br />
+          <label for="">Address</label><br />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="style"
+          /><br /><br />
+          <label for="">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="style"
+          /><br /><br />
+         
+          
+          <p>Already have an account? <a href="login.html">LOG IN</a></p>
+        </form>
+      </div>
+    </div>
+    <!-- popup for mpin -->
+    <div class="mpincontent inactive">
+       <div class="mpincreate ">
+        <div class="bank">
+          <img src="./img/Logo.svg" alt="">
+      </div>
+        <div class="mpincenter">
+            <form class="form1 ">
+         <div class="mpinspace"> 
+          <input type="text" id="mpin1" placeholder="Please enter four digit MPIN" maxlength="4" pattern="\d{4}" class="style" required><br><br><br>
+          <input type="text" id="mpin2" placeholder="Confirm your four digit MPIN" maxlength="4" pattern="\d{4}" class="style" required>
+        </div>
+          <button type="submit" id="mpinsubmit" >Submit</button>
+      </form>
+    </div>    
+       </div>
+      </div>
+  </body>
+  <script src="homee.js"></script>
+  <script src="signup.js"></script>
+  <script src="login.js"></script>
+</html>
